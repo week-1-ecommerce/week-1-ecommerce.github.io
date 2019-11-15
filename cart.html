@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aiger Store</title>
+  <link type="text/css" href="assets/style.css" rel="stylesheet">
+  <link type="text/css" href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans" rel="stylesheet">
+</head>
+<style>
+  .cart {text-align: center;}
+  .cart {margin-top: 50px;}
+  table{ width: 900px }
+  .tabel th,td {border: 1px solid rgba(0, 0, 0, 0.5); padding: 10px;}
+  .bold {font-weight: bold;}
+  table {border-collapse: collapse;}
+</style>
+<body>
+  <header>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-2">
+          <div class="left-navbar">
+            <img src="./assets/logos/logos-light.png" alt="/" class="logo-header">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="navbar right-navbar">
+            <ul class="menus">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumb">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-1">
+          <h3 class="title-breadcrumb">Cart Shop</h3>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-2">
+          <ul class="menu-breadcrumb">
+            <li><a href="product.html">Products &nbsp;&nbsp;/&nbsp;&nbsp; </a></li>
+            <li><span>Cart Shop</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div id="cart" class="cart">
+      <h2>Ringkasan Pesanan</h2>
+      <table align="center" class="tabel">
+        <thead class="tabel-header">
+          <tr>
+            <th>Image</th>
+            <th>Nama Barang</th>
+            <th>Jumlah</th>
+            <th>Harga</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="tabel-body">
+          <tr>
+            <td><img src="./assets/images/products/product-1.jpg" alt="" height=100 width=100></img></td>
+            <td>Carrier Aiger Type 1</td>
+            <td>1</td>
+            <td>IDR 1.200.000</td> 
+            <td>
+              <a href="#" onclick="return false" class="button button-danger">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot class="tabel-footer bold">
+          <tr>
+            <td colspan="3">Total</td>
+            <td>IDR 1.200.000</td>                 
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+      <form>
+        <div class="mb-1">
+          <label for="alamat-pengiriman">Alamat Pengiriman:</label>
+          <input id="alamat-pengiriman" type="text" row="3" col="10">
+        </div>
+        <div class="mb-1">
+          <label id="metode-pengiriman">Metode Pengiriman:</label>
+          <select id="metode-pengiriman" >
+              <option value="tiki">TIKI</option>
+              <option value="jne">JNE</option>
+              <option value="pos">POS</option>
+          </select>
+        </div>
+        <div class="mb-1">
+          <label id="asuransi-pengiriman">Ingin Menggunakan Asuransi Pengiriman ?</label>
+          <input type="checkbox" name="ya" value="ya"> Ya
+        </div>
+        <a href="./payment.html" class="button button-primary">Selesai, lanjut ke pembayaran</a>
+        <a href="./product.html" class="button button-light-primary">Lanjutkan Belanja</a>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="body-footer">
+      <div class="grid-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./assets/logos/logos-light.png" class="logo-footer" alt="/">
+            <div class="address">
+              <p>Jl. Sultan Iskandar Muda 5A,<br>Jakarta Selatan - Indonesia</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="menus-footer">
+              <ol>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#" onclick="return false">Contact</a></li>
+              </ol>
+              <ol>
+                <li><a href="home.html" onclick="return false">FAQ</a></li>
+                <li><a href="product.html" onclick="return false">How To Payment</a></li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group mt-0">
+              <h3 class="subscribe mt-0">Subscribe</h3>
+              <input type="text" name="subscribe" id="subscribe" placeholder="Your Email" class="form-input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p class="center" style="text-align:center; font-size:12px !important">AIGER STORE ©2019 Created By : Fajrin Noor Rachman, Arif Rahmawan, Muhammad Anova Nurfaqih</p>
+    </div>
+  </footer>
+</body>
+</html>
+
